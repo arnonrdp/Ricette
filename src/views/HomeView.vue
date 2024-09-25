@@ -84,7 +84,7 @@
                         v-ripple
                       >
                         <q-item-section class="text-body1 text-capitalize">
-                          &bullet; {{ instruction }}
+                          {{ index + 1 }}. {{ instruction }}
                         </q-item-section>
                       </q-item>
                     </q-list>
@@ -94,8 +94,20 @@
             </q-card-section>
 
             <q-card-actions align="right">
-              <q-btn color="primary" label="Edit" no-caps @click="onEdit(recipe)" />
-              <q-btn color="negative" label="Delete" no-caps @click="onDelete(recipe.id)" />
+              <q-btn
+                color="primary"
+                label="Edit"
+                no-caps
+                style="width: 10rem"
+                @click="onEdit(recipe)"
+              />
+              <q-btn
+                color="negative"
+                label="Delete"
+                no-caps
+                style="width: 10rem"
+                @click="onDelete(recipe.id)"
+              />
             </q-card-actions>
           </q-card>
         </q-expansion-item>
