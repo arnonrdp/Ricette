@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-py-md" style="">
+  <q-page class="q-py-md">
     <section class="flex full-width justify-between">
       <q-btn color="primary" label="Add Recide" no-caps @click="isAdding = true" />
       <div class="q-gutter-x-md row">
