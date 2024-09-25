@@ -2,7 +2,7 @@
   <q-page class="q-py-md">
     <RecipeList @create="onCreate" @edit="onEdit" @deleteConfirmation="onDeleteConfirmation" />
 
-    <RecipeForm v-if="recipe" v-model="recipe" v-model:isAdding="isAdding" />
+    <RecipeForm v-if="recipe" v-model="recipe" v-model:isAdding="isAdding" v-model:is-editing="isEditing" />
 
     <q-dialog v-if="recipe" v-model="isDeleting" @hide="resetRecipe">
       <q-card style="width: 30rem">

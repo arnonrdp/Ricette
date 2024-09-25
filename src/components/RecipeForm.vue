@@ -92,12 +92,11 @@
 <script setup lang="ts">
 import type { Recipe } from '@/model/Recipe'
 import { useRecipeStore } from '@/stores/recipes'
-import { ref } from 'vue'
 
 const recipeStore = useRecipeStore()
 const recipe = defineModel<Recipe>({ required: true })
 const isAdding = defineModel('isAdding', { default: false, required: true })
-const isEditing = ref(false)
+const isEditing = defineModel('isEditing', { default: false, required: true })
 
 function onSubmit() {
   if (isEditing.value) {
