@@ -4,7 +4,7 @@ import { LocalStorage, Notify } from 'quasar'
 
 export const useRecipeStore = defineStore('recipe', {
   state: () => ({
-    _recipes: LocalStorage.getItem('recipes') as Recipe[],
+    _recipes: (LocalStorage.getItem('recipes') || []) as Recipe[],
     _recipe: {
       id: '',
       name: '',
