@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-py-md">
-    <section class="flex full-width justify-between">
+    <section class="flex full-width justify-between q-mt-lg q-px-md">
       <q-btn color="primary" label="Add Recide" no-caps @click="isAdding = true" />
       <div class="q-gutter-x-md row">
         <q-input dense placeholder="Search" outlined v-model="search" />
