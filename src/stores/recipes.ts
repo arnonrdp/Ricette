@@ -46,6 +46,7 @@ export const useRecipeStore = defineStore('recipe', {
     },
 
     addRecipe(recipe: Recipe) {
+      recipe.id = Math.random().toString(36).substr(2, 9)
       this._recipes.push(recipe)
       LocalStorage.set('recipes', this._recipes)
       Notify.create({ message: 'Recipe added', color: 'positive' })

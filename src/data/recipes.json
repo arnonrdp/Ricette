@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "5pwus8620",
     "name": "Pasta with Tomato Sauce",
     "description": "A simple and delicious pasta dish with tomato sauce",
     "ingredients": ["pasta", "tomato sauce", "salt", "pepper", "olive oil"],
@@ -19,7 +19,7 @@
     "servings": 2
   },
   {
-    "id": 2,
+    "id": "9l2m1n3k",
     "name": "Grilled Cheese Sandwich",
     "description": "A classic and comforting grilled cheese sandwich",
     "ingredients": ["bread", "cheese", "butter"],
@@ -40,7 +40,7 @@
     "servings": 1
   },
   {
-    "id": 3,
+    "id": "J3k9l2m1n",
     "name": "Caesar Salad",
     "description": "A classic Caesar salad with homemade dressing",
     "ingredients": ["romaine lettuce", "croutons", "parmesan cheese", "Caesar dressing"],
