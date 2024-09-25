@@ -19,6 +19,8 @@ A simple recipe manager app built with Vue 3, Vite and Quasar. We use the local 
 ## Bonus Features
 
 - Form validation for non-empty recipe fields.
+- Possibility to clear all recipes.
+- Possibility to restore the default recipes.
 
 ## Improvement
 
