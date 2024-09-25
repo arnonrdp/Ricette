@@ -2,7 +2,17 @@
   <q-page class="q-py-md" style="">
     <section class="flex full-width justify-between">
       <q-btn color="primary" label="Add Recide" no-caps @click="isAdding = true" />
-      <q-input dense placeholder="Search" outlined v-model="search" />
+      <div class="q-gutter-x-md row">
+        <q-input dense placeholder="Search" outlined v-model="search" />
+        <q-select
+          dense
+          label="Filter by Complexity"
+          outlined
+          :options="['easy', 'medium', 'hard']"
+          style="width: 10rem"
+          v-model="complexityFilter"
+        />
+      </div>
     </section>
 
     <q-list class="q-mt-md">
@@ -233,12 +243,14 @@ const recipe = ref<Recipe>({
   instructions: []
 })
 const search = ref<string>('')
+const complexityFilter = ref<string>('')
 
 const filteredRecipes = computed(() => {
   return recipeStore.recipes.filter(
     (recipe) =>
-      recipe.name.toLowerCase().includes(search.value.toLowerCase()) ||
-      recipe.description.toLowerCase().includes(search.value.toLowerCase())
+      (recipe.name.toLowerCase().includes(search.value.toLowerCase()) ||
+        recipe.description.toLowerCase().includes(search.value.toLowerCase())) &&
+      (complexityFilter.value === '' || recipe.complexity === complexityFilter.value)
   )
 })
 
