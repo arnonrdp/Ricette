@@ -21,16 +21,29 @@
         :caption="`Complexity: ${recipe.complexity}`"
         :default-opened="recipe.id === '1'"
         group="recipe"
+        hide-expand-icon
         :key="recipe.id"
         :label="recipe.name"
         popup
       >
-        <q-separator />
+        <template v-slot:header>
+          <q-item>
+            <q-item-section thumbnail>
+              <q-avatar :color="complexityColors.find((color) => color.value === recipe.complexity)?.color">
+                <q-icon color="white" name="restaurant" />
+                <q-tooltip class="text-capitalize text-caption">{{ recipe.complexity }}</q-tooltip>
+              </q-avatar>
+            </q-item-section>
+            <q-item-section>
+              <q-item-label>
+                <h6>{{ recipe.name }}</h6>
+                <p class="q-mb-none text-subtitle1">{{ recipe.description }}</p>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+        </template>
         <q-card>
           <q-card-section>
-            <h6>{{ recipe.name }}</h6>
-            <p class="text-subtitle1">{{ recipe.description }}</p>
-
             <q-banner dark>
               <div class="row">
                 <div class="col-sm-3 col-xs-12 col-grow text-center">
@@ -107,6 +120,11 @@ const splitterModel = ref<number>(50)
 
 const search = ref<string>('')
 const complexityFilter = ref<string>('')
+const complexityColors = [
+  { value: 'easy', color: 'green' },
+  { value: 'medium', color: 'orange' },
+  { value: 'hard', color: 'red' }
+]
 
 const filteredRecipes = computed(() => {
   return recipeStore.recipes.filter(

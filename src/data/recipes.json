@@ -1,24 +1,5 @@
 [
   {
-    "id": "5pwus8620",
-    "name": "Pasta with Tomato Sauce",
-    "description": "A simple and delicious pasta dish with tomato sauce",
-    "ingredients": ["pasta", "tomato sauce", "salt", "pepper", "olive oil"],
-    "instructions": [
-      "Boil water in a pot",
-      "Add pasta to the boiling water",
-      "Cook pasta for 10 minutes",
-      "Drain the pasta",
-      "Add tomato sauce, salt, pepper, and olive oil to the pasta",
-      "Mix well and serve"
-    ],
-    "complexity": "easy",
-    "imageLink": "https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg",
-    "prepTime": 5,
-    "cookTime": 10,
-    "servings": 2
-  },
-  {
     "id": "9l2m1n3k",
     "name": "Grilled Cheese Sandwich",
     "description": "A classic and comforting grilled cheese sandwich",
@@ -51,10 +32,29 @@
       "Toss the salad until well coated",
       "Serve and enjoy"
     ],
-    "complexity": "easy",
+    "complexity": "medium",
     "imageLink": "https://www.allrecipes.com/thmb/mXZ0Tulwn3x9_YB_ZbkiTveDYFE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229063-Classic-Restaurant-Caesar-Salad-ddmfs-4x3-231-89bafa5e54dd4a8c933cf2a5f9f12a6f.jpg",
     "prepTime": 10,
     "cookTime": 0,
+    "servings": 2
+  },
+  {
+    "id": "5pwus8620",
+    "name": "Pasta with Tomato Sauce",
+    "description": "A simple and delicious pasta dish with tomato sauce",
+    "ingredients": ["pasta", "tomato sauce", "salt", "pepper", "olive oil"],
+    "instructions": [
+      "Boil water in a pot",
+      "Add pasta to the boiling water",
+      "Cook pasta for 10 minutes",
+      "Drain the pasta",
+      "Add tomato sauce, salt, pepper, and olive oil to the pasta",
+      "Mix well and serve"
+    ],
+    "complexity": "hard",
+    "imageLink": "https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg",
+    "prepTime": 5,
+    "cookTime": 10,
     "servings": 2
   }
 ]
