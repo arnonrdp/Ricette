@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-py-md">
     <section class="flex full-width justify-between q-mt-lg q-px-md">
-      <q-btn color="primary" label="Add Recide" no-caps @click="isAdding = true" />
+      <q-btn color="primary" icon="add" label="Add Recide" no-caps @click="isAdding = true" />
       <div class="q-gutter-x-md row">
         <q-input dense placeholder="Search" outlined v-model="search" />
         <q-select
@@ -35,19 +35,19 @@
               <q-banner dark>
                 <div class="row">
                   <div class="col-3 col-grow text-center">
-                    <p class="q-mb-none q-mt-md text-bold">SERVINGS:</p>
+                    <p class="q-mb-none q-mt-md text-bold">SERVINGS</p>
                     <p class="text-italic">{{ recipe.servings }}</p>
                   </div>
                   <div class="col-3 col-grow text-center">
-                    <p class="q-mb-none q-mt-md text-bold">PREP TIME:</p>
+                    <p class="q-mb-none q-mt-md text-bold">PREP TIME</p>
                     <p class="text-italic">{{ recipe.prepTime }} min</p>
                   </div>
                   <div class="col-3 col-grow text-center">
-                    <p class="q-mb-none q-mt-md text-bold">COOK TIME:</p>
+                    <p class="q-mb-none q-mt-md text-bold">COOK TIME</p>
                     <p class="text-italic">{{ recipe.cookTime }} min</p>
                   </div>
                   <div v-if="recipe.prepTime && recipe.cookTime" class="col-3 col-grow text-center">
-                    <p class="q-mb-none q-mt-md text-bold">TOTAL TIME:</p>
+                    <p class="q-mb-none q-mt-md text-bold">TOTAL TIME</p>
                     <p class="text-italic">{{ recipe.prepTime + recipe.cookTime }} min</p>
                   </div>
                 </div>
@@ -80,8 +80,16 @@
             </q-card-section>
 
             <q-card-actions align="right">
-              <q-btn color="primary" label="Edit" no-caps style="width: 10rem" @click="onEdit(recipe)" />
-              <q-btn color="negative" label="Delete" no-caps style="width: 10rem" @click="onDelete(recipe.id)" />
+              <q-btn color="primary" icon="edit" label="Edit" no-caps style="width: 10rem" @click="onEdit(recipe)" />
+              <q-btn
+                color="negative"
+                icon="delete"
+                label="Delete"
+                no-caps
+                outline
+                style="width: 10rem"
+                @click="onDeleteConfirmation(recipe)"
+              />
             </q-card-actions>
           </q-card>
         </q-expansion-item>
@@ -176,6 +184,20 @@
         </q-form>
       </q-card>
     </q-dialog>
+
+    <q-dialog v-model="isDeleting" @hide="resetRecipe">
+      <q-card style="width: 30rem">
+        <q-card-section class="q-pb-none">
+          <h5>Delete Recipe</h5>
+          <p class="text-body1">Are you sure you want to delete this delicious {{ recipe.name }}?</p>
+        </q-card-section>
+
+        <q-card-actions>
+          <q-btn class="full-width q-mb-sm" color="primary" label="Delete" no-caps @click="onDelete(recipe.id)" />
+          <q-btn class="full-width" color="negative" label="Cancel" no-caps outline @click="isDeleting = false" />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </q-page>
 </template>
 
@@ -188,6 +210,7 @@ const recipeStore = useRecipeStore()
 const splitterModel = ref<number>(50)
 
 const isAdding = ref<boolean>(false)
+const isDeleting = ref<boolean>(false)
 const isEditing = ref<boolean>(false)
 const recipe = ref<Recipe>({
   id: '',
@@ -214,6 +237,8 @@ const filteredRecipes = computed(() => {
 })
 
 function resetRecipe() {
+  isAdding.value = false
+  isDeleting.value = false
   isEditing.value = false
   recipe.value = {
     id: '',
@@ -245,8 +270,14 @@ function onEdit(item: Recipe) {
   recipe.value = { ...item }
 }
 
+function onDeleteConfirmation(item: Recipe) {
+  isDeleting.value = true
+  recipe.value = { ...item }
+}
+
 function onDelete(id: string) {
   recipeStore.deleteRecipe(id)
+  isDeleting.value = false
 }
 </script>
 
