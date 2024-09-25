@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta with Tomato Sauce",
+    "description": "A simple and delicious pasta dish with tomato sauce",
+    "ingredients": ["pasta", "tomato sauce", "salt", "pepper", "olive oil"],
+    "instructions": [
+      "Boil water in a pot",
+      "Add pasta to the boiling water",
+      "Cook pasta for 10 minutes",
+      "Drain the pasta",
+      "Add tomato sauce, salt, pepper, and olive oil to the pasta",
+      "Mix well and serve"
+    ],
+    "complexity": "easy",
+    "imageLink": "https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2
+  },
+  {
+    "id": 2,
+    "name": "Grilled Cheese Sandwich",
+    "description": "A classic and comforting grilled cheese sandwich",
+    "ingredients": ["bread", "cheese", "butter"],
+    "instructions": [
+      "Heat a skillet over medium heat",
+      "Butter one side of each slice of bread",
+      "Place one slice of bread, butter-side down, on the skillet",
+      "Add cheese on top of the bread",
+      "Place the other slice of bread, butter-side up, on top of the cheese",
+      "Cook until the bottom slice is golden brown",
+      "Flip the sandwich and cook until the other side is golden brown",
+      "Remove from skillet and serve"
+    ],
+    "complexity": "easy",
+    "imageLink": "https://natashaskitchen.com/wp-content/uploads/2021/08/Grilled-Cheese-Sandwich-SQ.jpg",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 1
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "description": "A classic Caesar salad with homemade dressing",
+    "ingredients": ["romaine lettuce", "croutons", "parmesan cheese", "Caesar dressing"],
+    "instructions": [
+      "Wash and chop the romaine lettuce",
+      "Add croutons and parmesan cheese to the lettuce",
+      "Pour Caesar dressing over the salad",
+      "Toss the salad until well coated",
+      "Serve and enjoy"
+    ],
+    "complexity": "easy",
+    "imageLink": "https://www.allrecipes.com/thmb/mXZ0Tulwn3x9_YB_ZbkiTveDYFE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229063-Classic-Restaurant-Caesar-Salad-ddmfs-4x3-231-89bafa5e54dd4a8c933cf2a5f9f12a6f.jpg",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2
+  }
+]
