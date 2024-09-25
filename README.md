@@ -1,39 +1,25 @@
 # Ricette
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple recipe manager app built with Vue 3, Vite and Quasar. We use the local storage to store the recipes, so they persist between sessions.
 
-## Recommended IDE Setup
+## Instalattion
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+1. Clone the repository: `git clone https://github.com/arnonrdp/Ricette.git`
+2. Navigate to the project folder: `cd Ricette`
+3. Install dependencies: `yarn`
+4. Start the app: `yarn dev`
+5. Open `http://localhost:5173` in your browser
 
-## Type Support for `.vue` Imports in TS
+## Features Implemented
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- Add, edit, delete recipes.
+- Search and filter recipes by difficulty.
+- Persistence using localStorage.
 
-## Customize configuration
+## Bonus Features
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Form validation for non-empty recipe fields.
 
-## Project Setup
+## Improvement
 
-```sh
-yarn
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+- Improve mobile responsiveness.
