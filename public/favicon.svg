@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="252.419 18.72 45.459 42.129" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="65" y1="235" x2="485" y2="235" gradientUnits="userSpaceOnUse" id="color-1217662301">
+      <stop offset="0" stop-color="#7b4397"/>
+      <stop offset="1" stop-color="#dc2430"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#color-1217662301)" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal" transform="matrix(1, 0, 0, 1, 187.419159, -195.215027)">
+    <g data-paper-data="{&quot;isGlobalGroup&quot;:true,&quot;bounds&quot;:{&quot;x&quot;:64.99999999999999,&quot;y&quot;:213.93551254829893,&quot;width&quot;:419.99999999999994,&quot;height&quot;:42.12897490340217}}">
+      <g data-paper-data="{&quot;fillRule&quot;:&quot;evenodd&quot;,&quot;fillRuleOriginal&quot;:&quot;evenodd&quot;,&quot;isIcon&quot;:true,&quot;iconStyle&quot;:&quot;standalone&quot;,&quot;selectedEffects&quot;:{&quot;container&quot;:&quot;&quot;,&quot;transformation&quot;:&quot;&quot;,&quot;pattern&quot;:&quot;&quot;},&quot;bounds&quot;:{&quot;x&quot;:64.99999999999999,&quot;y&quot;:213.93551254829893,&quot;width&quot;:45.459081089156925,&quot;height&quot;:42.12897490340217},&quot;iconType&quot;:&quot;icon&quot;,&quot;rawIconId&quot;:&quot;1717466&quot;,&quot;isDetailed&quot;:false,&quot;suitableAsStandaloneIcon&quot;:true}" fill-rule="evenodd" id="element-id-5104">
+        <path d="M77.16466,231.28229c1.07858,-0.43692 1.81633,-1.01882 2.39402,-1.47445c0.83413,-0.65786 1.3345,-1.0525 2.04517,-0.36762c3.43172,3.30704 8.81522,3.30979 12.24624,0.00018c0.70991,-0.68471 1.2721,-0.24744 2.15506,0.43926c1.14262,0.88863 2.82234,2.195 6.05423,2.02775c7.61821,-0.39423 11.22883,-9.84444 5.7917,-15.34619c-3.41178,-3.45201 -8.91347,-3.49944 -12.39186,-0.14474c-0.7126,0.68722 -1.25374,0.26241 -2.1188,-0.41657c-1.06753,-0.83793 -2.6283,-2.06301 -5.6131,-2.06301c-2.98597,0 -4.54645,1.22531 -5.6138,2.06342c-0.86471,0.67903 -1.40573,1.10379 -2.11874,0.41663c-5.60251,-5.39999 -14.99477,-1.42421 -14.99477,6.5115c0,6.44489 6.435,10.67629 12.16466,8.35386zM80.79931,231.81974c-1.79282,1.42994 -3.98011,2.28027 -6.29985,2.41039v14.93547h26.45501v-14.93547c-2.31928,-0.12989 -4.50767,-0.98004 -6.29985,-2.41022c-4.05865,3.23791 -9.79684,3.23768 -13.85531,-0.00018zM100.95447,256.06449v-4.57136h-26.45501v4.57136z" data-paper-data="{&quot;isPathIcon&quot;:true}" id="element-id-85242"/>
+      </g>
+    </g>
+  </g>
+</svg>
