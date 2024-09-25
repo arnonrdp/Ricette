@@ -58,15 +58,8 @@
                   <div class="q-pa-md">
                     <h5 class="q-mb-md">Ingredients</h5>
                     <q-list>
-                      <q-item
-                        v-for="(ingredient, index) in recipe.ingredients"
-                        clickable
-                        :key="index"
-                        v-ripple
-                      >
-                        <q-item-section class="text-body1 text-capitalize">
-                          &bullet; {{ ingredient }}
-                        </q-item-section>
+                      <q-item v-for="(ingredient, index) in recipe.ingredients" clickable :key="index" v-ripple>
+                        <q-item-section class="text-body1 text-capitalize">&bullet; {{ ingredient }}</q-item-section>
                       </q-item>
                     </q-list>
                     <q-img class="full-width q-mt-md" :src="recipe.imageLink" />
@@ -77,15 +70,8 @@
                   <div class="q-pa-md">
                     <h5 class="q-mb-md">Instructions</h5>
                     <q-list>
-                      <q-item
-                        v-for="(instruction, index) in recipe.instructions"
-                        clickable
-                        :key="index"
-                        v-ripple
-                      >
-                        <q-item-section class="text-body1 text-capitalize">
-                          {{ index + 1 }}. {{ instruction }}
-                        </q-item-section>
+                      <q-item v-for="(instruction, index) in recipe.instructions" clickable :key="index" v-ripple>
+                        <q-item-section class="text-body1 text-capitalize">{{ index + 1 }}. {{ instruction }}</q-item-section>
                       </q-item>
                     </q-list>
                   </div>
@@ -94,20 +80,8 @@
             </q-card-section>
 
             <q-card-actions align="right">
-              <q-btn
-                color="primary"
-                label="Edit"
-                no-caps
-                style="width: 10rem"
-                @click="onEdit(recipe)"
-              />
-              <q-btn
-                color="negative"
-                label="Delete"
-                no-caps
-                style="width: 10rem"
-                @click="onDelete(recipe.id)"
-              />
+              <q-btn color="primary" label="Edit" no-caps style="width: 10rem" @click="onEdit(recipe)" />
+              <q-btn color="negative" label="Delete" no-caps style="width: 10rem" @click="onDelete(recipe.id)" />
             </q-card-actions>
           </q-card>
         </q-expansion-item>
@@ -119,22 +93,8 @@
         <q-form @submit="onSubmit">
           <q-card-section class="q-pb-none">
             <h5>{{ isEditing ? 'Edit Recipe' : 'Add Recipe' }}</h5>
-            <q-input
-              class="q-mb-lg q-mt-md"
-              dense
-              label="Name"
-              outlined
-              required
-              v-model="recipe.name"
-            />
-            <q-input
-              class="q-mb-lg"
-              dense
-              label="Description"
-              outlined
-              required
-              v-model="recipe.description"
-            />
+            <q-input class="q-mb-lg q-mt-md" dense label="Name" outlined required v-model="recipe.name" />
+            <q-input class="q-mb-lg" dense label="Description" outlined required v-model="recipe.description" />
             <q-select
               class="q-mb-lg"
               dense
@@ -210,21 +170,8 @@
           </q-card-section>
 
           <q-card-actions>
-            <q-btn
-              class="full-width q-mb-sm"
-              color="primary"
-              :label="isEditing ? 'Update' : 'Add'"
-              no-caps
-              type="submit"
-            />
-            <q-btn
-              class="full-width"
-              color="negative"
-              label="Cancel"
-              no-caps
-              outline
-              @click="isAdding = false"
-            />
+            <q-btn class="full-width q-mb-sm" color="primary" :label="isEditing ? 'Update' : 'Add'" no-caps type="submit" />
+            <q-btn class="full-width" color="negative" label="Cancel" no-caps outline @click="isAdding = false" />
           </q-card-actions>
         </q-form>
       </q-card>

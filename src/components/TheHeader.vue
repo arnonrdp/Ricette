@@ -1,9 +1,5 @@
 <template>
-  <q-header
-    class="text-white"
-    elevated
-    style="background: linear-gradient(90deg, #23152c, #34273c)"
-  >
+  <q-header class="text-white" elevated style="background: linear-gradient(90deg, #23152c, #34273c)">
     <q-toolbar class="toolbar">
       <q-toolbar-title>
         <q-img class="gt-xs" src="@/assets/logo.svg" width="20rem" />
