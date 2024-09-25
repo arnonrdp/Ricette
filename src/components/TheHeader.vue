@@ -2,8 +2,8 @@
   <q-header class="text-white" elevated style="background: linear-gradient(90deg, #23152c, #34273c)">
     <q-toolbar class="toolbar">
       <q-toolbar-title>
-        <q-img class="gt-xs" src="@/assets/logo.svg" width="20rem" />
-        <q-img class="lt-sm" src="/favicon.svg" width="3rem" />
+        <q-img class="cursor-pointer gt-xs" src="@/assets/logo.svg" width="20rem" @click="router.push('/')" />
+        <q-img class="cursor-pointer lt-sm" src="/favicon.svg" width="3rem" @click="router.push('/')" />
       </q-toolbar-title>
 
       <q-tabs align="right">
@@ -15,7 +15,11 @@
   </q-header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+</script>
 
 <style scoped>
 .toolbar {
