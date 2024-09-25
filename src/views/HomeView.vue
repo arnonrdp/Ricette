@@ -98,7 +98,7 @@
 
     <RecipeForm v-if="recipe" v-model="recipe" v-model:isAdding="isAdding" />
 
-    <q-dialog v-model="isDeleting" @hide="resetRecipe">
+    <q-dialog v-if="recipe" v-model="isDeleting" @hide="resetRecipe">
       <q-card style="width: 30rem">
         <q-card-section class="q-pb-none">
           <h5>Delete Recipe</h5>
