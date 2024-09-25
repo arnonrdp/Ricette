@@ -261,7 +261,7 @@ function onSubmit() {
 function onEdit(item: Recipe) {
   isEditing.value = true
   isAdding.value = true
-  recipe.value = item
+  recipe.value = { ...item }
 }
 
 function onDelete(id: string) {
