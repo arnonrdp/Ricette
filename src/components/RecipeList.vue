@@ -127,7 +127,7 @@ const complexityColors = [
 ]
 
 const filteredRecipes = computed(() => {
-  return recipeStore.recipes.filter(
+  return recipeStore.recipes?.filter(
     (recipe) =>
       (recipe.name.toLowerCase().includes(search.value.toLowerCase()) ||
         recipe.description.toLowerCase().includes(search.value.toLowerCase())) &&
