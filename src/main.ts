@@ -21,7 +21,7 @@ app.use(Quasar, {
   },
   config: {
     notify: {
-      position: 'top-right',
+      position: 'bottom-right',
       progress: true,
       timeout: 5000
     }
